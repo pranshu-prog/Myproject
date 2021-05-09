@@ -1,7 +1,7 @@
 <?php
-$servername = "127.0.0.1";
-$username = "root";
-$password = "Tukunmooly@tukun";
+$servername = "remotemysql.com";
+$username = "o97BArLbWx";
+$password = "CoIppWlwdA";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password);
@@ -11,14 +11,14 @@ if ($conn->connect_error) {
 }
 
 // Create database
-$sql = "CREATE DATABASE IF NOT EXISTS myDB";
+$sql = "CREATE DATABASE IF NOT EXISTS o97BArLbWx";
 if ($conn->query($sql) === TRUE) {
   echo "Database created successfully";
 } else {
   echo "Error creating database: " .$conn->error;
 }
 
-$dbname = "myDB";
+$dbname = "o97BArLbWx";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
